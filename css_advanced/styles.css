@@ -93,3 +93,70 @@ main > section:first-of-type button.cta{
   box-shadow:0 8px 24px rgba(162,70,255,.35);
   border:0;
 }
+/* === Task 3 · Quotes / Testimonial === */
+main > section:nth-of-type(2){
+  /* fondo morado del Figma */
+  background:#C271FF;
+  color:#fff;
+  padding:48px 0;
+}
+
+main > section:nth-of-type(2) .container{
+  display:grid;
+  grid-template-columns: 96px 1fr; /* avatar + texto */
+  gap:24px;
+  align-items:center;
+  width:min(100%, calc(var(--maxw) + 48px));
+  margin-inline:auto;
+  padding-inline:24px;
+}
+
+main > section:nth-of-type(2) .avatar{
+  width:96px;height:96px;
+  border-radius:50%;
+  overflow:hidden;
+  flex:0 0 96px;
+  box-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+
+main > section:nth-of-type(2) blockquote{
+  margin:0;
+  font-size:16px;
+  line-height:1.6;
+  color:rgba(255,255,255,.95);
+}
+
+main > section:nth-of-type(2) .author{
+  margin-top:14px;
+  font-weight:700;
+  font-size:16px;
+  color:#fff;
+}
+main > section:nth-of-type(2) .role{
+  margin-top:2px;
+  font-style:italic;
+  font-size:14px;
+  color:rgba(255,255,255,.8);
+}
+
+/* borde superior e inferior muy sutil como en la maqueta */
+main > section:nth-of-type(2)::before,
+main > section:nth-of-type(2)::after{
+  content:"";
+  display:block;
+  height:6px;
+  background:#071629;          /* mismo dark del body */
+  opacity:.95;
+}
+main > section:nth-of-type(2)::before{ margin-top:-6px; }
+main > section:nth-of-type(2)::after{ margin-bottom:-6px; }
+
+/* responsive */
+@media (max-width: 640px){
+  main > section:nth-of-type(2) .container{
+    grid-template-columns: 72px 1fr;
+    gap:16px;
+  }
+  main > section:nth-of-type(2) .avatar{ width:72px; height:72px; }
+}
+
