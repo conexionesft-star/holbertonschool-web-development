@@ -74,3 +74,62 @@ main > section:first-of-type .cta{
   header .container{ padding:22px 16px; }
   header nav{ gap:22px; }
 }
+/* === Task 3 · Quotes / Testimonial === */
+#quote{
+  position:relative;
+  background:#C271FF;   /* morado Figma */
+  color:#fff;
+  padding:48px 0;
+}
+#quote .container{
+  width:min(100%, calc(var(--maxw) + 48px));
+  margin-inline:auto;
+  padding-inline:24px;
+  display:grid;
+  grid-template-columns:96px 1fr; /* avatar + texto */
+  gap:24px;
+  align-items:center;
+}
+#quote .avatar{
+  width:96px; height:96px;
+  border-radius:50%;
+  overflow:hidden;
+  box-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+#quote blockquote{
+  margin:0 0 12px 0;
+  font-size:16px;
+  line-height:1.6;
+  color:rgba(255,255,255,.95);
+}
+#quote .author{
+  margin:0;
+  font-weight:700;
+  font-size:16px;
+}
+#quote .role{
+  margin:2px 0 0 0;
+  font-style:italic;
+  font-size:14px;
+  color:rgba(255,255,255,.85);
+}
+/* barras sutiles arriba/abajo como en la maqueta */
+#quote::before,
+#quote::after{
+  content:"";
+  position:absolute; left:0; right:0;
+  height:6px;
+  background:#071629; /* mismo dark del body */
+  opacity:.95;
+}
+#quote::before{ top:0; }
+#quote::after{ bottom:0; }
+
+/* responsive */
+@media (max-width:640px){
+  #quote .container{
+    grid-template-columns:72px 1fr;
+    gap:16px;
+  }
+  #quote .avatar{ width:72px; height:72px; }
+}
