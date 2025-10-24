@@ -1,7 +1,11 @@
-# holbertonschool-web-development
+# CSS, advanced
 
-Este repositorio contiene los proyectos de *Web Development*.
+This project styles the **SmileSchool** page from the Figma file using only **HTML/CSS/JS** (no external libraries).
 
-- Proyecto: **HTML, advanced**
-  - Carpeta: `html_advanced/`
-  - [README del proyecto](html_advanced/README.md)
+## Learning Objectives
+- What is CSS and how browsers load styles
+- Classes, selectors and specificity
+- CSS box model (margin, border, padding, sizing)
+- Write W3C-compliant CSS that validates
+
+Student: Julio C Gomez
