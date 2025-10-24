@@ -9,3 +9,4 @@ This project styles the **SmileSchool** page from the Figma file using only **HT
 - Write W3C-compliant CSS that validates
 
 Student: Julio C Gomez
+conexionesft-star  conexiones.ft@gmail.com
